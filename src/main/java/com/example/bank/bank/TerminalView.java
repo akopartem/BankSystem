@@ -49,7 +49,7 @@ public class TerminalView {
                 VBox v = new VBox();
                 l.setText("Талон номер " + (Ticket.ticketList.size() + 1) + ". \nЦель визита: " + elem);
                 v.getChildren().add(l);
-                Ticket.getTicket(elem);
+                Ticket.getTicket(elem.replace("Кредитные карты", "Карты"));
                 stage1.initModality(Modality.NONE);
                 stage1.setTitle("Талон номер " + Ticket.ticketList.size());
                 Scene scene1 = new Scene(gr, 500, 100);
